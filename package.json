@@ -1,0 +1,21 @@
+{
+  "name": "pathfinder",
+  "module": "index.ts",
+  "type": "module",
+  "private": false,
+  "bin": {
+    "pathfinder": "src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/qrcode": "^1.5.5",
+    "@types/yargs": "^17.0.33",
+    "qrcode": "^1.5.4",
+    "yargs": "^18.0.0"
+  }
+}
