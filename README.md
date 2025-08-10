@@ -1,15 +1,26 @@
 # pathfinder
 
-To install dependencies:
+Простой CLI-инструмент для раздачи файла по HTTP.
+
+## Установка
 
 ```bash
-bun install
+bun add -g https://github.com/ffebr/pathfinder-cli.git
 ```
 
-To run:
+## Использование
 
+Запустить сервер с файлом:
 ```bash
-bun run index.ts
+pathfinder --file example.txt
 ```
 
-This project was created using `bun init` in bun v1.2.16. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Указать порт через флаг:
+```bash
+pathfinder --file example.txt --port 8080
+```
+
+Указать порт через переменную окружения:
+```bash
+PORT=4000 pathfinder --file example.txt
+```
