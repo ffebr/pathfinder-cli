@@ -14,7 +14,7 @@ export const args = yargs(hideBin(process.argv))
         type: "number",
         description: "Порт для запуска сервера",
         default: () => {
-            return Bun.env.PORT ?? 55555;
+            return Bun.env.PORT ?? 0;
         }
     })
     .help("help")
